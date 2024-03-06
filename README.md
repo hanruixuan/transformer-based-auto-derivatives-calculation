@@ -16,8 +16,6 @@ python train.py \
     --max_epochs 10 \
     --val_check_interval 0.2
 ```
-After the training, the final score on the test set (a portion of the train.txt) is saved in (`models/best/eval.txt`). The model accuracy is `96.88%` with training on 10 epochs.
-The trained model is stored as (`models/best/model.ckpt`). 
 
 ## Brief explanation
 The derivative calculation process is similar to machine translation tasks in NLP, and both of them can be considered as sequence-to-sequence model. Therefore, the `seq2seq transformer` model, which is well-performed in machine translation tasks, is used to learn the derivative calculation rules and even chain rules.
