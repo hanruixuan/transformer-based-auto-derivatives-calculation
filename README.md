@@ -3,11 +3,7 @@ This repository utilizes the Seq2seq transformer to learn the derivative of the 
 - This repo tests the model against a toy dataset of derivative calculation
 - The model `Seq2Seq` top layer module is implemented using PyTorch Lightning
 - The Python environment is Python 3.7 and all Python dependencies and their versions are included in (`requirements.txt`)
-
-
-## Data and preprocess
-- The full dataset (`data/data.txt`) contains a million examples.
-- The full dataset is split into the train set (`data/train_set.txt`) and test set (`data/test_set.txt`) using `data_preprocess.py` 
+- The derivatives equation for training should follow the format: "d(-cos^3(4e^7))/de=84e^6*sin(4e^7)*cos^2(4e^7)"
 
 ## Training and Evaluation
 
