@@ -1,0 +1,123 @@
+    | Name                                              | Type                         | Params
+-----------------------------------------------------------------------------------------------------
+0   | encoder                                           | Encoder                      | 1.6 M
+1   | encoder.tok_embedding                             | Embedding                    | 11.3 K
+2   | encoder.pos_embedding                             | Embedding                    | 25.6 K
+3   | encoder.layers                                    | ModuleList                   | 1.6 M
+4   | encoder.layers.0                                  | EncoderLayer                 | 527 K
+5   | encoder.layers.0.self_attn_layer_norm             | LayerNorm                    | 512
+6   | encoder.layers.0.ff_layer_norm                    | LayerNorm                    | 512
+7   | encoder.layers.0.self_attention                   | MultiHeadAttentionLayer      | 263 K
+8   | encoder.layers.0.self_attention.fc_q              | Linear                       | 65.8 K
+9   | encoder.layers.0.self_attention.fc_k              | Linear                       | 65.8 K
+10  | encoder.layers.0.self_attention.fc_v              | Linear                       | 65.8 K
+11  | encoder.layers.0.self_attention.fc_o              | Linear                       | 65.8 K
+12  | encoder.layers.0.self_attention.dropout           | Dropout                      | 0
+13  | encoder.layers.0.positionwise_feedforward         | PositionwiseFeedforwardLayer | 262 K
+14  | encoder.layers.0.positionwise_feedforward.fc_1    | Linear                       | 131 K
+15  | encoder.layers.0.positionwise_feedforward.fc_2    | Linear                       | 131 K
+16  | encoder.layers.0.positionwise_feedforward.dropout | Dropout                      | 0
+17  | encoder.layers.0.dropout                          | Dropout                      | 0
+18  | encoder.layers.1                                  | EncoderLayer                 | 527 K
+19  | encoder.layers.1.self_attn_layer_norm             | LayerNorm                    | 512
+20  | encoder.layers.1.ff_layer_norm                    | LayerNorm                    | 512
+21  | encoder.layers.1.self_attention                   | MultiHeadAttentionLayer      | 263 K
+22  | encoder.layers.1.self_attention.fc_q              | Linear                       | 65.8 K
+23  | encoder.layers.1.self_attention.fc_k              | Linear                       | 65.8 K
+24  | encoder.layers.1.self_attention.fc_v              | Linear                       | 65.8 K
+25  | encoder.layers.1.self_attention.fc_o              | Linear                       | 65.8 K
+26  | encoder.layers.1.self_attention.dropout           | Dropout                      | 0
+27  | encoder.layers.1.positionwise_feedforward         | PositionwiseFeedforwardLayer | 262 K
+28  | encoder.layers.1.positionwise_feedforward.fc_1    | Linear                       | 131 K
+29  | encoder.layers.1.positionwise_feedforward.fc_2    | Linear                       | 131 K
+30  | encoder.layers.1.positionwise_feedforward.dropout | Dropout                      | 0
+31  | encoder.layers.1.dropout                          | Dropout                      | 0
+32  | encoder.layers.2                                  | EncoderLayer                 | 527 K
+33  | encoder.layers.2.self_attn_layer_norm             | LayerNorm                    | 512
+34  | encoder.layers.2.ff_layer_norm                    | LayerNorm                    | 512
+35  | encoder.layers.2.self_attention                   | MultiHeadAttentionLayer      | 263 K
+36  | encoder.layers.2.self_attention.fc_q              | Linear                       | 65.8 K
+37  | encoder.layers.2.self_attention.fc_k              | Linear                       | 65.8 K
+38  | encoder.layers.2.self_attention.fc_v              | Linear                       | 65.8 K
+39  | encoder.layers.2.self_attention.fc_o              | Linear                       | 65.8 K
+40  | encoder.layers.2.self_attention.dropout           | Dropout                      | 0
+41  | encoder.layers.2.positionwise_feedforward         | PositionwiseFeedforwardLayer | 262 K
+42  | encoder.layers.2.positionwise_feedforward.fc_1    | Linear                       | 131 K
+43  | encoder.layers.2.positionwise_feedforward.fc_2    | Linear                       | 131 K
+44  | encoder.layers.2.positionwise_feedforward.dropout | Dropout                      | 0
+45  | encoder.layers.2.dropout                          | Dropout                      | 0
+46  | encoder.dropout                                   | Dropout                      | 0
+47  | decoder                                           | Decoder                      | 2.4 M
+48  | decoder.tok_embedding                             | Embedding                    | 10.8 K
+49  | decoder.pos_embedding                             | Embedding                    | 25.6 K
+50  | decoder.layers                                    | ModuleList                   | 2.4 M
+51  | decoder.layers.0                                  | DecoderLayer                 | 790 K
+52  | decoder.layers.0.self_attn_layer_norm             | LayerNorm                    | 512
+53  | decoder.layers.0.enc_attn_layer_norm              | LayerNorm                    | 512
+54  | decoder.layers.0.ff_layer_norm                    | LayerNorm                    | 512
+55  | decoder.layers.0.self_attention                   | MultiHeadAttentionLayer      | 263 K
+56  | decoder.layers.0.self_attention.fc_q              | Linear                       | 65.8 K
+57  | decoder.layers.0.self_attention.fc_k              | Linear                       | 65.8 K
+58  | decoder.layers.0.self_attention.fc_v              | Linear                       | 65.8 K
+59  | decoder.layers.0.self_attention.fc_o              | Linear                       | 65.8 K
+60  | decoder.layers.0.self_attention.dropout           | Dropout                      | 0
+61  | decoder.layers.0.encoder_attention                | MultiHeadAttentionLayer      | 263 K
+62  | decoder.layers.0.encoder_attention.fc_q           | Linear                       | 65.8 K
+63  | decoder.layers.0.encoder_attention.fc_k           | Linear                       | 65.8 K
+64  | decoder.layers.0.encoder_attention.fc_v           | Linear                       | 65.8 K
+65  | decoder.layers.0.encoder_attention.fc_o           | Linear                       | 65.8 K
+66  | decoder.layers.0.encoder_attention.dropout        | Dropout                      | 0
+67  | decoder.layers.0.positionwise_feedforward         | PositionwiseFeedforwardLayer | 262 K
+68  | decoder.layers.0.positionwise_feedforward.fc_1    | Linear                       | 131 K
+69  | decoder.layers.0.positionwise_feedforward.fc_2    | Linear                       | 131 K
+70  | decoder.layers.0.positionwise_feedforward.dropout | Dropout                      | 0
+71  | decoder.layers.0.dropout                          | Dropout                      | 0
+72  | decoder.layers.1                                  | DecoderLayer                 | 790 K
+73  | decoder.layers.1.self_attn_layer_norm             | LayerNorm                    | 512
+74  | decoder.layers.1.enc_attn_layer_norm              | LayerNorm                    | 512
+75  | decoder.layers.1.ff_layer_norm                    | LayerNorm                    | 512
+76  | decoder.layers.1.self_attention                   | MultiHeadAttentionLayer      | 263 K
+77  | decoder.layers.1.self_attention.fc_q              | Linear                       | 65.8 K
+78  | decoder.layers.1.self_attention.fc_k              | Linear                       | 65.8 K
+79  | decoder.layers.1.self_attention.fc_v              | Linear                       | 65.8 K
+80  | decoder.layers.1.self_attention.fc_o              | Linear                       | 65.8 K
+81  | decoder.layers.1.self_attention.dropout           | Dropout                      | 0
+82  | decoder.layers.1.encoder_attention                | MultiHeadAttentionLayer      | 263 K
+83  | decoder.layers.1.encoder_attention.fc_q           | Linear                       | 65.8 K
+84  | decoder.layers.1.encoder_attention.fc_k           | Linear                       | 65.8 K
+85  | decoder.layers.1.encoder_attention.fc_v           | Linear                       | 65.8 K
+86  | decoder.layers.1.encoder_attention.fc_o           | Linear                       | 65.8 K
+87  | decoder.layers.1.encoder_attention.dropout        | Dropout                      | 0
+88  | decoder.layers.1.positionwise_feedforward         | PositionwiseFeedforwardLayer | 262 K
+89  | decoder.layers.1.positionwise_feedforward.fc_1    | Linear                       | 131 K
+90  | decoder.layers.1.positionwise_feedforward.fc_2    | Linear                       | 131 K
+91  | decoder.layers.1.positionwise_feedforward.dropout | Dropout                      | 0
+92  | decoder.layers.1.dropout                          | Dropout                      | 0
+93  | decoder.layers.2                                  | DecoderLayer                 | 790 K
+94  | decoder.layers.2.self_attn_layer_norm             | LayerNorm                    | 512
+95  | decoder.layers.2.enc_attn_layer_norm              | LayerNorm                    | 512
+96  | decoder.layers.2.ff_layer_norm                    | LayerNorm                    | 512
+97  | decoder.layers.2.self_attention                   | MultiHeadAttentionLayer      | 263 K
+98  | decoder.layers.2.self_attention.fc_q              | Linear                       | 65.8 K
+99  | decoder.layers.2.self_attention.fc_k              | Linear                       | 65.8 K
+100 | decoder.layers.2.self_attention.fc_v              | Linear                       | 65.8 K
+101 | decoder.layers.2.self_attention.fc_o              | Linear                       | 65.8 K
+102 | decoder.layers.2.self_attention.dropout           | Dropout                      | 0
+103 | decoder.layers.2.encoder_attention                | MultiHeadAttentionLayer      | 263 K
+104 | decoder.layers.2.encoder_attention.fc_q           | Linear                       | 65.8 K
+105 | decoder.layers.2.encoder_attention.fc_k           | Linear                       | 65.8 K
+106 | decoder.layers.2.encoder_attention.fc_v           | Linear                       | 65.8 K
+107 | decoder.layers.2.encoder_attention.fc_o           | Linear                       | 65.8 K
+108 | decoder.layers.2.encoder_attention.dropout        | Dropout                      | 0
+109 | decoder.layers.2.positionwise_feedforward         | PositionwiseFeedforwardLayer | 262 K
+110 | decoder.layers.2.positionwise_feedforward.fc_1    | Linear                       | 131 K
+111 | decoder.layers.2.positionwise_feedforward.fc_2    | Linear                       | 131 K
+112 | decoder.layers.2.positionwise_feedforward.dropout | Dropout                      | 0
+113 | decoder.layers.2.dropout                          | Dropout                      | 0
+114 | decoder.fc_out                                    | Linear                       | 10.8 K
+115 | decoder.dropout                                   | Dropout                      | 0
+116 | criterion                                         | CrossEntropyLoss             | 0
+-----------------------------------------------------------------------------------------------------
+4.0 M     Trainable params
+0         Non-trainable params
+4.0 M     Total params
